@@ -1,0 +1,74 @@
+@import url("https://fonts.googleapis.com/css2?family=Ubuntu:ital,wght@0,300;0,400;0,500;0,700;1,300;1,400;1,500;1,700&display=swap");
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer base {
+  body {
+    font-size: 16px;
+    background-color: #fff;
+    font-family: "Ubuntu", sans-serif;
+  }
+
+  input[type="text"],
+  input[type="password"],
+  input[type="search"] {
+    color: #5d5d5d;
+    padding: 2px;
+  }
+
+  input,
+  textarea {
+    outline: none;
+    border: none;
+    border: solid 1px #f2f2f2;
+  }
+
+  h1,
+  h2 {
+    line-height: 1px;
+    font: normal 170% "Ubuntu", sans-serif;
+    margin: 0 0 15px 0;
+    padding: 15px 0 5px 0;
+    color: #000;
+  }
+
+  h2 {
+    font-size: 140%;
+  }
+
+  ul {
+    margin: 2px 0 22px 17px;
+  }
+
+  ul li {
+    margin: 0 0 6px 0;
+    padding: 0 0 4px 5px;
+    line-height: 1.5em;
+  }
+
+  ul.menu li {
+    float: left;
+    padding: 0 0 0 9px;
+    list-style: none;
+    margin: 1px 20px 0 0;
+    cursor: pointer;
+  }
+
+  ul.menu li {
+    font: normal 100% "trebuchet ms", sans-serif;
+    display: block;
+    height: 20px;
+    padding: 6px 35px 5px 28px;
+    color: #fff;
+    text-decoration: none;
+  }
+
+  ul.menu li.selected {
+    color: #aeb002;
+  }
+
+  ul.menu li:hover {
+    color: #e4ec04;
+  }
+}
